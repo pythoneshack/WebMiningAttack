@@ -24,5 +24,6 @@ df['XSS'] = xss
 print(df.info())
 print(df.head())
 df.to_csv(r'dataSqlInj.csv')
+
 #df['SQLInjection'] = df.apply(lambda row: SqlInjectionIndetifier.detectRFI(row['Endpoint']))
 
