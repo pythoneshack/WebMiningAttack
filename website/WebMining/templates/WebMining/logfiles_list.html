@@ -1,0 +1,33 @@
+{% extends "WebMining/base.html"%}
+{% block content%}
+<h3>LogFiles</h3>
+
+<p>
+    <a href="{% url 'upload_log' %}" class="button btn-primary">Upload LogFile</a>
+</p>
+
+
+<table class="table">
+    <thead>
+      <tr>
+          <th>Title</th>
+          <th>Show</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%for log in logs%}
+        <tr>
+            <td>{{ log.title }}</td>
+
+            <td>
+                <a href="{{ log.csv.url }}" class="btn btn-primary btn-sm" target="_blank">Show LogFile</a>
+
+            </td>
+        </tr>
+      {% endfor %}
+
+    </tbody>
+
+</table>
+
+{% endblock %}
