@@ -18,7 +18,7 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-         <a class="navbar-brand" href="#">HACATHON</a>
+         <a class="navbar-brand" href="#">HACKATHON</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
@@ -29,15 +29,20 @@
         <a class="nav-link" href="/"  > Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="#">Maps</a></li>
-       <li class="nav-item">
-        <select class="custom-select">
-          <option selected> select menu</option>
-          <option value="1">Traffic</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-       </li>
+          <a class="nav-link" href="/media/logs/csvs/my_mapHeat.html">Maps</a></li>
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+  </ul>
+</div>
+
      </ul>
      <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -48,13 +53,8 @@
 
     </header>
 
-
-    <div class="containers">
-        <h2>Non Profit Organization</h2>
-
-
          {% block content %} {% endblock content%}
-    </div>
+
 </body>
 
 </html>
