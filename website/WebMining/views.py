@@ -1,26 +1,21 @@
-from django.shortcuts import render,redirect
-from django.core.files.storage import FileSystemStorage
+from django.shortcuts import render, redirect
 from .forms import LogForm
 from .models import Log
-from django.views.generic import TemplateView
-from django.shortcuts import render_to_response
-from django.http import HttpResponse
+from .General import *
+
+
 # Create your views here.
 
 
 def home(request):
-    return render(request, 'WebMining/home.html')
+    traffic = {}
+    traffic['requests'] = get_total_requests()
+    traffic['traffic'] = get_total_traffic()
+    traffic['frenq_status'] = freq_status()
+    traffic['unique_ip'] = get_total_unique_ip()
+    traffic['total_5xx'] = get_total_5xx_status()
 
-
-def upload(request):
-    context = {}
-    if request.method == 'POST':
-        uploaded_file = request.FILES['document']
-        fs=FileSystemStorage()
-        name = fs.save(uploaded_file.name, uploaded_file)
-        context['url'] = fs.url(name)
-
-    return render(request, 'WebMining/upload.html', context)
+    return render(request, 'WebMining/home.html', traffic)
 
 
 def logfiles_list(request):

@@ -1,19 +1,33 @@
+{% extends "WebMining/base.html"%}
 
+{% block content%}
 
-{%load staticfiles%}
-{% block nav-home%}
+<div class="container" style="min-height 95%:">
+    <table>
+        <td><p> Total Requests : {{requests}}</p></td>
 
-<!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href=" {% static 'img/styles.css'%}"/>
-    <meta charset="UTF-8">
-    <title>Home Page</title>
-    <a href="/upload" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Lets Go!</a>
+        <td> <p> Total traffic : {{traffic}} GB</p> </td>
 
+        <td><p> Total Unique Ip : {{unique_ip}}</p></td>
 
+        <td><p> Total 5xx : {{total_5xx}}</p></td>
+    </table>
+ </div>
 
-{%endblock nav-home %}
+<table>
+    <tr>
 
+        <td><iframe width="130%" height="250%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0" onclick="window.open('/media/logs/csvs/BarStatus.svg','_blank')"  src="/media/logs/csvs/BarStatus.svg"></iframe></td>
+        <td><iframe width="130%" height="250%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0" onclick="window.open('/media/logs/csvs/TimeSeriesData.svg','_blank')"  src="/media/logs/csvs/TimeSeriesData.svg"></iframe></td>
+        <td><iframe width="130%" height="250%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0" onclick="window.open('/media/logs/csvs/TimeSeriesRequests.svg','_blank')" src="/media/logs/csvs/TimeSeriesRequests.svg"></iframe></td>
+        <td><iframe width="130%" height="250%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0" onclick="window.open('/media/logs/csvs/PiePlot_6ClLgWE.svg','_blank')"  src="/media/logs/csvs/PiePlot_6ClLgWE.svg"></iframe></td>
+    </tr>
+        <tr>
+        <td><iframe width="600%" height="400%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0" src="/media/logs/csvs/my_mapHeat.html"></iframe></td>
+        </tr>
+    <tr>
+        <td><iframe width="600%" height="400%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0" src="/media/logs/csvs/my_map.html"></iframe></td>
+    </tr>
+</table>
 
-
-
-
+{% endblock content%}
