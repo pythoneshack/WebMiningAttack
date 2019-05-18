@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="431fc9bb-1bc6-4d08-9585-cdcec9932ef6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/General.py" beforeDir="false" afterPath="$PROJECT_DIR$/General.py" afterDir="false" />
+    <list default="true" id="9d076776-0a8d-4edf-b901-7c057d575aee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/website/WebMining/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/website/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WebMiningAttack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WebMiningAttack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BarStatus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/BarStatus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/General.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/General.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SqlInjection.py" beforeDir="false" afterPath="$PROJECT_DIR$/SqlInjection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_mining.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_mining.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/apple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/bbb.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/dark.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/ee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/fin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/gre.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/grey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/stars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/str.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/upload.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/upstyles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/web.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/img/webb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/static/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/templates/WebMining/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/templates/WebMining/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/templates/WebMining/logfiles_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/templates/WebMining/logfiles_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/templates/WebMining/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/templates/WebMining/upload_log.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/templates/WebMining/upload_log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/WebMining/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,37 +63,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/upload_log.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/logfiles_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/website/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="132" column="18" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/WebMining/static/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/WebMining/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/WebMining/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/General.py">
+        <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+            <state relative-caret-position="357">
+              <caret line="21" column="248" selection-start-line="21" selection-start-column="248" selection-end-line="21" selection-end-column="248" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PyPLots.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="66" selection-start-line="66" selection-end-line="66" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataCleaning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,13 +160,26 @@
       <list>
         <option value="$PROJECT_DIR$/PyPLots.py" />
         <option value="$PROJECT_DIR$/General.py" />
+        <option value="$PROJECT_DIR$/website/WebMining/urls.py" />
+        <option value="$PROJECT_DIR$/website/WebMining/model/General.py" />
+        <option value="$PROJECT_DIR$/website/WebMining/forms.py" />
+        <option value="$PROJECT_DIR$/website/WebMining/General.py" />
+        <option value="$PROJECT_DIR$/website/WebMining/views.py" />
+        <option value="$PROJECT_DIR$/website/WebMining/static/img/upstyles.css" />
+        <option value="$PROJECT_DIR$/website/WebMining/static/upstyles.css" />
+        <option value="$PROJECT_DIR$/website/WebMining/templates/WebMining/upload_log.html" />
+        <option value="$PROJECT_DIR$/website/WebMining/static/css/styles.css" />
+        <option value="$PROJECT_DIR$/website/WebMining/templates/WebMining/logfiles_list.html" />
+        <option value="$PROJECT_DIR$/website/WebMining/templates/WebMining/base.html" />
+        <option value="$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="254" />
+    <option name="y" value="55" />
+    <option name="width" value="1237" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -90,6 +193,60 @@
               <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="WebMining" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="WebMining" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="WebMining" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="WebMining" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="WebMining" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="WebMining" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="WebMining" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebMiningAttack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebMiningAttack" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -100,10 +257,22 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/model" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Misel\PycharmProjects\WebMiningAttack\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Misel\PycharmProjects\WebMiningAttack\website\WebMining\static" />
+      <recent name="D:\Users\Misel\PycharmProjects\WebMiningAttack\website\WebMining" />
+      <recent name="D:\Users\Misel\PycharmProjects\WebMiningAttack\website" />
+      <recent name="D:\Users\Misel\PycharmProjects\WebMiningAttack" />
+      <recent name="D:\Users\Misel\PycharmProjects\WebMiningAttack\model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,7 +300,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataCleaning.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\Misel\PycharmProjects\WebMiningAttack\model\DataCleaning.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,7 +322,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/General.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\Misel\PycharmProjects\WebMiningAttack\model\General.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -175,7 +344,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyPLots.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\Misel\PycharmProjects\WebMiningAttack\model\PyPLots.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -251,27 +420,27 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07675906" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.23293608" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49940264" visible="true" weight="0.10554371" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="right" id="SciView" weight="0.32995737" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4995752" weight="0.23167539" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5004248" side_tool="true" weight="0.23167539" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Structure" order="5" sideWeight="0.50059736" weight="0.2497876" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,16 +462,6 @@
     <entry file="file://$PROJECT_DIR$/dataNew.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataCleaning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PyPLots.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -313,12 +472,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/General.py">
+    <entry file="file://$PROJECT_DIR$/website/WebMining/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataCleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/sdf/sdf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/static/upstyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/website/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="132" column="18" selection-start-line="132" selection-start-column="18" selection-end-line="132" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/General.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/upload_log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/logfiles_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="248" selection-start-line="21" selection-start-column="248" selection-end-line="21" selection-end-column="248" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
