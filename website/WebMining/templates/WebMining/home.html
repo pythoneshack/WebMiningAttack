@@ -4,13 +4,13 @@
 
 <div class="container" style="min-height 95%:">
     <table>
-        <td><p> Total Requests : {{requests}}</p></td>
+        <td style="font-weight: bold"><p style=font-size:30px;> Total Requests : {{requests}}</p></td>
 
-        <td> <p> Total traffic : {{traffic}} GB</p> </td>
+        <td style="font-weight: bold"> <p style=font-size:30px;> Total traffic : {{traffic}} GB</p> </td>
 
-        <td><p> Total Unique Ip : {{unique_ip}}</p></td>
+        <td style="font-weight: bold"><p style=font-size:30px;> Total Unique Ip : {{unique_ip}}</p></td>
 
-        <td><p> Total 5xx : {{total_5xx}}</p></td>
+        <td style="font-weight: bold"><p style=font-size:30px;"> Total 5xx : {{total_5xx}}</p></td>
     </table>
  </div>
 
@@ -29,5 +29,10 @@
         <td><iframe width="600%" height="400%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0" src="/media/logs/csvs/my_map.html"></iframe></td>
     </tr>
 </table>
+
+<footer>
+  <p>Posted by: Pythones Team </p>
+    <p>Copyrights: Πυθωνες </p>
+</footer>
 
 {% endblock content%}
