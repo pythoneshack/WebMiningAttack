@@ -1,0 +1,26 @@
+body{
+  background: #FFE4C4 ;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: 	#FFFFFF
+}
+.container{
+ text-shadow: 0 0 3px #FF0000;
+
+  text-align: center;
+
+
+}
+h2,h3 {
+color:#191919;
+text-align: center;
+font-size:500%;
+}
+
+textarea {
+    width: 50px;
+}
+
+
+

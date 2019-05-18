@@ -1,0 +1,14 @@
+{% extends "WebMining/base.html"%}
+
+{% load crispy_forms_tags %}
+
+{% block content%}
+<h3>Upload LogFile</h3>
+
+  <form method="post" enctype="multipart/form-data" class="form-group col-md-4">
+      {% csrf_token %}
+      {{form|crispy}}
+      <button type="submit" class="btn btn-primary">Upload LogFile</button>
+  </form>
+
+{% endblock %}
