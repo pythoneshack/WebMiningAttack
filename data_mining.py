@@ -37,14 +37,18 @@ print(count_attacks)
 percentages = count_attacks/count_rows *100
 print(percentages)
 
+
 pages_count = df_pages.groupby('Endpoint').count()
-sorted_pages = pages_count.sort_values('xss',ascending=False).head(5)
+print('Page Count :' + str(pages_count))
+sorted_pages = pages_count.sort_values(['xss', 'sqli_injection'], ascending=[False, False]).head(5)
 
 country_count = df_pages.groupby('Country').count()
-sorted_countries = country_count.sort_values('xss',ascending=False).head(5)
+sorted_countries = country_count.sort_values('xss', ascending=False).head(5)
 
 hour_count = df_pages.groupby('hour').count()
-sorted_hours = hour_count.sort_values('xss',ascending=False).head(5)
+sorted_hours = hour_count.sort_values('xss', ascending=False).head(5)
+
+df.to_csv("SQl-XSS.csv")
 
 print(sorted_pages)
 print(sorted_countries)
