@@ -27,6 +27,8 @@ for index, row in sorted_malicious_ip.head(5).iterrows():
     line_chart.add(row['Host'], row['Frequency_xss'] + row['Frequency_sql']+row['Frequency_lfi']+row['FrequencyWebshell'])
 line_chart.render_to_file("Top5ip.svg")
 
+
+
 # #TOP 5 IP ATTACKED
 df_top_attack = pd.DataFrame(columns=['Endpoint', 'Frequency_xss', 'Frequency_sql', 'Frequency_lfi', 'FrequencyWebshell', 'Frequency'])
 #EDW
@@ -46,3 +48,23 @@ for index, row in df_new.sort_values('count', ascending=False).head(5).iterrows(
    line_chart.add(row['Endpoint'], row['count'])
 
 line_chart.render_to_file("Top5endpoints.svg")
+
+
+# TOP COUNTRIES ATTACKS
+df_country = pd.DataFrame(columns=['Country', 'Frequency_xss', 'Frequency_sql', 'Frequency_lfi', 'FrequencyWebshell', 'Frequency'])
+df_country['Country'] = df_attack['Country']
+count_ = []
+for index, row_ in df_attack.iterrows():
+    count_.append(row_['xss'] + row_['Webshell'] + row_['sqli_injection'] + row_['lfi'])
+df_country['Frequency'] = count_
+
+line_chart = pygal.HorizontalBar()
+line_chart.title = 'Frequency of Country attacks'
+df_new_ = pd.DataFrame({'count_': df_country.groupby('Country').size()}).reset_index()
+for index, row_ in df_new_.sort_values('count_', ascending=False).iterrows():
+   line_chart.add(row_['Country'], row_['count_'])
+
+line_chart.render_to_file("TopCountries.svg")
+
+
+

@@ -3,9 +3,13 @@ background: #698080;
 
 }
 
-th, td {
-  padding: 30px;
+tr, td {
+  padding: 20px;
   text-align: center;
 }
+
+h3{
+ text-shadow: 2px 2px;
+ }
 
 

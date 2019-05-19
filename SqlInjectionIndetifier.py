@@ -25,11 +25,11 @@ def detectSQLi(query):
         return True
 
     # # look for single quote, = and --
-    # regex = re.compile(
-    #     '((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))|\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))',
-    #     re.IGNORECASE)
-    # if regex.search(query):
-    #     return True
+    regex = re.compile(
+        '((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))|\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))',
+        re.IGNORECASE)
+    if regex.search(query):
+        return True
 
     # look for MSExec
     regex = re.compile('exec(\s|\+)+(s|x)p\w+', re.IGNORECASE)

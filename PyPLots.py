@@ -15,8 +15,8 @@ df['minute'] = df.Date.apply(lambda x: x.minute)
 df['second'] = df.Date.apply(lambda x: x.second)
 
 # Data Kb to Mb
-df['Data'] = df['Data'].div(1000)
-df['Data'] = df['Data'].div(1000)
+df['Data'] = df['Data'].div(1000000000)
+
 
 df_new = pd.DataFrame(columns=['Frequency', 'Data', 'hour', 'minute', 'second'])
 
