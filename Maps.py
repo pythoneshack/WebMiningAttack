@@ -1,5 +1,6 @@
 import folium
 from folium.plugins import HeatMapWithTime
+from folium import CircleMarker
 import pandas as pd
 import sys
 
@@ -29,6 +30,15 @@ df['hour'] = df.Date.apply(lambda x: x.hour)
 df['minutes'] = df.Date.dt.minute
 df['seconds'] = df.Date.dt.second
 
+folium_map = folium.Map(location=[dfN['Latitude'].astype(float).mean(), dfN['Longitude'].astype(float).mean()],
+                        zoom_start=2.1,
+                        tiles="CartoDB dark_matter")
+for index, row in dfP.iterrows():
+    marker = folium.CircleMarker(location=[float(row.Latitude), float(row.Longitude)],radius=5,
+                        color="#0A8A9F",
+                        fill=True, popup=row["Host"])
+    marker.add_to(folium_map)
+folium_map.save("my_map.html")
 print(df.seconds)
 
 df_five = df[df.hour == 5]
@@ -39,6 +49,6 @@ for minute in df_five.minutes.sort_values().unique():
         ['Latitude', 'Longitude']).sum().reset_index().values.tolist())
 
 print(df_hour_list)
-HeatMapWithTime(df_hour_list, radius=5, gradient={0.2: 'blue', 0.4: 'lime', 0.6: 'orange', 1: 'red'}, min_opacity=0.5,
+HeatMapWithTime(df_hour_list, radius=8, gradient={0.2: 'blue', 0.4: 'lime', 0.6: 'orange', 1: 'red'}, min_opacity=0.5,
                 max_opacity=0.8, use_local_extrema=True).add_to(heat_map)
 heat_map.save("my_mapHeat.html")

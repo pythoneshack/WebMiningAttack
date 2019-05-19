@@ -14,16 +14,25 @@ df_cluster['Data'] = df[df['hour'] == 5].groupby('Host')['Data'].sum()
 print(df_cluster)
 
 # Anomaly Detecth with k means in time range 5 to 6
-kmeans = KMeans(n_clusters=3).fit(df_cluster[['Frequency', 'Data']])
-centroids = kmeans.cluster_centers_
+
+
 
 # Plot Clustering and labeling IP
 xy_chart = pygal.XY(stroke=False)
 xy_chart.title = 'Clusters'
 
-plt.scatter(df_cluster['Frequency'], df_cluster['Data'], c= kmeans.labels_.astype(float), s=50, alpha=0.5)
-for index, row in df_cluster.iterrows():
-    plt.annotate(row['Ip'], (row['Frequency'],row['Data']))
+sse = []
+for x in range(2,20):
+    kmeans = KMeans(n_clusters=x).fit(df_cluster[['Frequency', 'Data']])
+    sse.append(kmeans.inertia_)
+    centroids = kmeans.cluster_centers_
+print(sse)
+plt.plot(sse)
 plt.show()
-plt.savefig('AnomalyDetction.png')
+
+# plt.scatter(df_cluster['Frequency'], df_cluster['Data'], c= kmeans.labels_.astype(float), s=50, alpha=0.5)
+# for index, row in df_cluster.iterrows():
+#     plt.annotate(row['Ip'], (row['Frequency'],row['Data']))
+# plt.show()
+# plt.savefig('AnomalyDetction.png')
 #print(df_cluster)
