@@ -54,7 +54,7 @@ rfi = len(df[df.SQLInjectionRFI == True])
 df_pages = df[(df.sqli_injection==True) | (df.xss==True) | (df.Webshell == True) | (df.lfi == True)]
 
 pages_count = df_pages.groupby('Endpoint').count()
-# print('Page Count :' + str(pages_count))
+print(pages_count)
 sorted_pages = pages_count.sort_values(['xss', 'sqli_injection', 'lfi', 'Webshell'], ascending=[False, False, False, False]).head(5)
 
 country_count = df_pages.groupby('Country').count()
@@ -62,11 +62,6 @@ sorted_countries = country_count.sort_values(['xss', 'sqli_injection', 'lfi', 'W
 
 hour_count = df_pages.groupby('hour').count()
 sorted_hours = hour_count.sort_values('xss', ascending=False).head(5)
-
-# s_endpo = pd.DataFrame(columns=['Endpoint', 'Frequency'])
-# s_endpo['Frequency'] = df.groupby('Endpoint').count()
-# s_endpo['Endpoint'] = df.groupby('Endpoint').agg({'Endpoint': lambda x: list(x).__getitem__(1)})
-# print(s_endpo.head())
 
 
 df.to_csv("SQl-XSS.csv")
@@ -86,7 +81,7 @@ print(percentages)
 
 #Attacking pie plot
 pie_chart = pygal.Pie()
-pie_chart.title = 'Server Status'
+pie_chart.title = 'Server Status (12.289% Attacked)'
 pie_chart.add('Abnormal Requests', count_attacks)
 pie_chart.add('Normal Requests', normal_req)
 pie_chart.render_to_file("Normal_Abnormal.svg")
