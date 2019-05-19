@@ -7,9 +7,14 @@ REGULAR EXPRESSION IS BASED ON https://forensics.cert.org/latk/loginspector.py
 '''
 
 def detectSXX(query):
-    regex = re.compile('/(\b)(on\S+)(\s*)=|script|(<\s*)(\/*)script/')
+    # regex = re.compile('/(\b)(on\S+)(\s*)=|script|(<\s*)(\/*)script/')
+    # if regex.search(query):
+    #     return True
+
+    regex = re.compile("<(?:[^>=]|='[^']*'|=\"[^\"]*\"|=[^'\"][^\\s>]*)*>")
     if regex.search(query):
         return True
+
     return False
 
 
@@ -19,12 +24,12 @@ def detectSQLi(query):
     if regex.search(query):
         return True
 
-    # look for single quote, = and --
-    regex = re.compile(
-        '((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))|\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))',
-        re.IGNORECASE)
-    if regex.search(query):
-        return True
+    # # look for single quote, = and --
+    # regex = re.compile(
+    #     '((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))|\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))',
+    #     re.IGNORECASE)
+    # if regex.search(query):
+    #     return True
 
     # look for MSExec
     regex = re.compile('exec(\s|\+)+(s|x)p\w+', re.IGNORECASE)
@@ -82,3 +87,10 @@ def detectWebShell(query):
 
     return False
 
+
+def detectLFI(query):
+    regex = re.compile('^(?:[a-z0-9_-]|.(?!.))+$', re.IGNORECASE)
+    if regex.search(query):
+        return True
+
+    return False
