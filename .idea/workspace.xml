@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d076776-0a8d-4edf-b901-7c057d575aee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my_mapHeat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/WebMining/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/WebMining/templates/WebMining/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/templates/WebMining/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,20 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/WebMining/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            <state relative-caret-position="391">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#table#0;n#div#0;n#!!top" expanded="true" />
@@ -170,8 +160,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="254" />
-    <option name="y" value="55" />
+    <option name="x" value="490" />
+    <option name="y" value="61" />
     <option name="width" value="1237" />
     <option name="height" value="970" />
   </component>
@@ -255,6 +245,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\Misel\PycharmProjects\WebMiningAttack" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -450,7 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558219457381</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Plots done">
+      <created>1558233587434</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558233587434</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Plots done">
+      <created>1558233734392</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558233734392</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -469,7 +478,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10554371" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19083156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -483,7 +492,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.1603467" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -683,6 +692,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website/WebMining/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_mapHeat.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/upload_log.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -692,8 +711,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/WebMining/templates/WebMining/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        <state relative-caret-position="391">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#table#0;n#div#0;n#!!top" expanded="true" />
