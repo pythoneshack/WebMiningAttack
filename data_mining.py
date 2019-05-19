@@ -93,6 +93,7 @@ pie_chart.add('Cross-site Scripting', xss_number)
 pie_chart.add('SQL Injection', sql_inj_number)
 pie_chart.add('Web Shell', webs)
 pie_chart.add('Local File Inclusion', lfi)
+pie_chart.add('Remote File Inclusion', rfi)
 pie_chart.render_to_file("AttackPercentages.svg")
 
 
