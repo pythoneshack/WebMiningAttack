@@ -41,4 +41,4 @@ for minute in df_five.minutes.sort_values().unique():
 print(df_hour_list)
 HeatMapWithTime(df_hour_list, radius=5, gradient={0.2: 'blue', 0.4: 'lime', 0.6: 'orange', 1: 'red'}, min_opacity=0.5,
                 max_opacity=0.8, use_local_extrema=True).add_to(heat_map)
-heat_map.save("my_mapHeat1.html")
+heat_map.save("my_mapHeat.html")
