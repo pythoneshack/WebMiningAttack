@@ -73,7 +73,8 @@ print(xss_number)
 print(sql_inj_number)
 print(webs)
 print(lfi)
-count_attacks = (xss_number + sql_inj_number + webs + lfi)
+print(rfi)
+count_attacks = (xss_number + sql_inj_number + webs + lfi + rfi)
 normal_req = count_rows - count_attacks
 print(count_attacks)
 percentages = count_attacks/count_rows *100
@@ -81,7 +82,7 @@ print(percentages)
 
 #Attacking pie plot
 pie_chart = pygal.Pie()
-pie_chart.title = 'Server Status (12.289% Attacked)'
+pie_chart.title = 'Server Status (31.33% Attacked)'
 pie_chart.add('Abnormal Requests', count_attacks)
 pie_chart.add('Normal Requests', normal_req)
 pie_chart.render_to_file("Normal_Abnormal.svg")
@@ -92,6 +93,7 @@ pie_chart.add('Cross-site Scripting', xss_number)
 pie_chart.add('SQL Injection', sql_inj_number)
 pie_chart.add('Web Shell', webs)
 pie_chart.add('Local File Inclusion', lfi)
+pie_chart.add('Remote File Inclusion', rfi)
 pie_chart.render_to_file("AttackPercentages.svg")
 
 
