@@ -15,6 +15,10 @@ def detectSXX(query):
     if regex.search(query):
         return True
 
+    regex = re.compile('/(\%27)|(\')|(\-\-)|(\%23)|(#)/ix', re.IGNORECASE)
+    if regex.search(query):
+        return True
+
     return False
 
 
@@ -25,11 +29,11 @@ def detectSQLi(query):
         return True
 
     # # look for single quote, = and --
-    # regex = re.compile(
-    #     '((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))|\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))',
-    #     re.IGNORECASE)
-    # if regex.search(query):
-    #     return True
+    regex = re.compile(
+        '((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))|\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))',
+        re.IGNORECASE)
+    if regex.search(query):
+        return True
 
     # look for MSExec
     regex = re.compile('exec(\s|\+)+(s|x)p\w+', re.IGNORECASE)
@@ -70,6 +74,14 @@ def detectRFI(query):
     if regex.search(query):
         return True
 
+    regex = re.compile("^([a-zA-Z0-9])(([\-.]|[_]+)?([a-zA-Z0-9]+))*(@){1}[a-z0-9]+[.]{1}(([a-z]{2,3})|([a-z]{2,3}[.]{1}[a-z]{2,3}))$",re.IGNORECASE)
+    if regex.search(query):
+        return True
+
+    regex = re.compile('(?<=\()(.+?)(?=\))', re.IGNORECASE)
+    if regex.search(query):
+        return True
+
     return False
 
 
@@ -85,11 +97,15 @@ def detectWebShell(query):
     if regex.search(query):
         return True
 
+    regex = re.compile('/(\%27)|(\')|(\-\-)|(\%23)|(#)/ix', re.IGNORECASE)
+    if regex.search(query):
+        return True
+
     return False
 
 
 def detectLFI(query):
-    regex = re.compile('^(?:[a-z0-9_-]|.(?!.))+$', re.IGNORECASE)
+    regex = re.compile('(?<=\()(.+?)(?=\))', re.IGNORECASE)
     if regex.search(query):
         return True
 
