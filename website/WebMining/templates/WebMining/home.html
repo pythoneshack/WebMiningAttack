@@ -4,13 +4,16 @@
 
 <div class="container" style="min-height 95%:">
     <table>
-        <td style="font-weight: bold"><p style=font-size:30px;> Total Requests : {{requests}}</p></td>
+        <td style="font-weight: bold"><p style=font-size:25px;> Total Requests : {{requests}}</p></td>
 
-        <td style="font-weight: bold"><p style=font-size:30px;> Total traffic : {{traffic}} GB</p></td>
+        <td style="font-weight: bold"><p style=font-size:25px;> Total traffic : {{traffic}} GB</p></td>
 
-        <td style="font-weight: bold"><p style=font-size:30px;> Total Unique Ip : {{unique_ip}}</p></td>
+        <td style="font-weight: bold"><p style=font-size:25px;> Total Unique Ip : {{unique_ip}}</p></td>
 
-        <td style="font-weight: bold"><p style=font-size:30px;"> Total 5xx : {{total_5xx}}</p></td>
+        <td style="font-weight: bold"><p style=font-size:25px;"> Total 5xx : {{total_5xx}}</p></td>
+
+         <td style="font-weight: bold"><p style=font-size:25px;"> Server Attacks (%) :  22.54% </p></td>
+
     </table>
 </div>
 <table>
@@ -19,11 +22,18 @@
         src="media/logs/csvs/my_mapHeat_PFYJWnN.html"></iframe>
         <p style=font-size:30px;>Per minute at 17:00</p></td>
 </tr>
+     <tr>
+    <td><iframe width="600%" height="400%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0"
+        src="/media/logs/csvs/my_mapHeat_cIh0BME.html"></iframe>
+        <p style=font-size:30px;>24 Hour</p></td>
+</tr>
     <tr>
 
   <td> <iframe width="600%" height="400%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0"
                src="/media/logs/csvs/my_map.html"></iframe> </td>
     </tr>
+
+
 </table>
 
 <table>
@@ -53,10 +63,40 @@
 
 <table>
     <tr>
-   <td style="width:600px"> <p style=font-size:20px;>Kmeans Clustering results for the most malicious Ip</p>
-    <iframe width="110%" height="320%" frameborder="10px" scrolling="no" marginheight="0" marginwidth="0"
-            onclick="window.open('/media/logs/csvs/clusteringDataFreeq.png'_blank)"
+         <td style="width:700px"> <p style=font-size:20px;>Kmeans Clustering results for the most malicious Ip</p>
+    <iframe width="95%" height="330%" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"
+            onclick="window.open('/media/logs/csvs/clusteringDataFreeq.png','_blank')"
             src="/media/logs/csvs/clusteringDataFreeq.png"></iframe></td>
+
+        <td style="width:700px">
+      <iframe width="110%" height="320%" frameborder="1" scrolling="no" marginheight="0" marginwidth="0"
+            onclick="window.open('/media/logs/csvs/Top5ip_dHyixgs.svg','_blank)'"
+            src="/media/logs/csvs/Top5ip_dHyixgs.svg"></iframe></td>
+    </tr>
+
+</table>
+
+<table>
+    <tr>
+        <td style="width:700px"> <iframe width="125%" height="300%" frameborder="5px;" scrolling="no"
+            onclick="window.open('/media/logs/csvs/AttackPercentages_WedxFei.svg','_blank')"
+                src="/media/logs/csvs/AttackPercentages_WedxFei.svg"></iframe> </td>
+
+
+        <td style="width:700px"> <iframe width="125%" height="300%" frameborder="5px;" scrolling="no"
+            onclick="window.open('/media/logs/csvs/Top5endpoints.svg','_blank')"
+                src="/media/logs/csvs/Top5endpoints.svg"></iframe> </td>
+    </tr>
+
+        <tr>
+        <td style="width:700px"> <iframe width="125%" height="300%" frameborder="5px;" scrolling="no"
+            onclick="window.open('/media/logs/csvs/Normal_Abnormal_Es7Y3jo.svg','_blank')"
+                src="/media/logs/csvs/Normal_Abnormal_Es7Y3jo.svg"></iframe> </td>
+
+
+        <td style="width:700px"> <iframe width="125%" height="300%" frameborder="5px;" scrolling="no"
+            onclick="window.open('/media/logs/csvs/Top5endpoints.svg','_blank')"
+                src="/media/logs/csvs/Top5endpoints.svg"></iframe> </td>
     </tr>
 
 </table>
