@@ -1,7 +1,7 @@
 import pandas as pd
 import pygal
 # Read DataFrame
-df = pd.read_csv("dataNew.csv")
+df = pd.read_csv("D:\\Users\\Misel\\PycharmProjects\\WebMiningAttack\\dataNew.csv")
 
 # Convert Data Column to numeric/ Bytes to Gb
 df["Data"] = pd.to_numeric(df.Data, errors='coerce')
@@ -36,6 +36,26 @@ print(data_traffic)
 
 # THIRD TASK
 ip_freq = df.groupby('Host').size().count()
+
+
+def get_total_traffic():
+    return data_traffic
+
+
+def get_total_requests():
+    return freq_traffic
+
+
+def freq_status():
+    return status_freq
+
+
+def get_total_unique_ip():
+    return ip_freq
+
+
+def get_total_5xx_status():
+    return five_xx_status.Frequency
 
 #print('Total Requests :' + str(freq_traffic))
 #print('Total Traffic :' + str(data_traffic))

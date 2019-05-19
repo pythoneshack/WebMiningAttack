@@ -1,6 +1,4 @@
 import folium
-from folium import plugins
-from folium.plugins import HeatMap
 from folium.plugins import HeatMapWithTime
 import pandas as pd
 import sys
@@ -21,19 +19,23 @@ folium_map.save("my_map.html")
 
 heat_map = folium.Map(location=[dfN['Latitude'].astype(float).mean(), dfN['Longitude'].astype(float).mean()],
                       zoom_start=2.1,
-                      tiles="stamenterrain")
+                      tiles="CartoDB dark_matter")
 
 df.Date = pd.to_datetime(df.Date)
 df['month'] = df.Date.apply(lambda x: x.month)
 df['week'] = df.Date.apply(lambda x: x.week)
 df['day'] = df.Date.apply(lambda x: x.day)
 df['hour'] = df.Date.apply(lambda x: x.hour)
+df['minutes'] = df.Date.dt.minute
+df['seconds'] = df.Date.dt.second
 
-print(df.hour)
+print(df.seconds)
+
+df_five = df[df.hour == 5]
 
 df_hour_list = []
-for hour in df.hour.sort_values().unique():
-    df_hour_list.append(df.loc[df.hour == hour, ['Latitude', 'Longitude']].groupby(
+for minute in df_five.minutes.sort_values().unique():
+    df_hour_list.append(df.loc[df.minutes == minute, ['Latitude', 'Longitude']].groupby(
         ['Latitude', 'Longitude']).sum().reset_index().values.tolist())
 
 print(df_hour_list)
