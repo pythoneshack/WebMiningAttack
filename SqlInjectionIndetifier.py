@@ -7,70 +7,45 @@ REGULAR EXPRESSION IS BASED ON https://forensics.cert.org/latk/loginspector.py
 '''
 
 def detectSXX(query):
-    regex = re.compile('/(\b)(on\S+)(\s*)=|script|(<\s*)(\/*)script/')
-    if regex.search(query):
-        return True
+    # regex = re.compile('/(\b)(on\S+)(\s*)=|script|(<\s*)(\/*)script/')
+    # if regex.search(query):
+    #     return True
 
     regex = re.compile("<(?:[^>=]|='[^']*'|=\"[^\"]*\"|=[^'\"][^\\s>]*)*>")
     if regex.search(query):
         return True
+
     return False
-
-
 
 
 def detectSQLi(query):
-
-    if check_regex('drop|delete|truncate|update|insert|select|declare|union|create|concat', query):
-        return True
-
-    if check_regex('((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))|\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))', query):
-        return True
-
-    if check_regex('exec(\s|\+)+(s|x)p\w+', query):
-        return True
-
-    if check_regex('/\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))/ix', query):
-        return True
-
-    if check_regex('/(\%27)|(\')|(\-\-)|(\%23)|(#)/ix', query):
-        return True
-
-    if check_regex('.*\[select\]\s+.*\[into\].*', query):
-        return True
-
-    if check_regex('.*\[select\]\s+.*\[from\].*', query):
-        return True
-
-    if check_regex('.*\[insert\]\s+.*\[into\].*', query):
-        return True
-
-    if check_regex('.*\[drop\]\s+.*\[database\].*', query):
-        return True
-
-    if check_regex('.*\[drop\]\s+.*\[table\].*', query):
-        return True
-
-    if check_regex('.*\[delete\]\s+.*\[from\].*', query):
-        return True
-
-    if check_regex('.*\[exec\].*(%28|\().*(%29|\)).*', query):
-        return True
-
-    if check_regex('.*\[update\](%20|\+)(%20|\+|.)*\[set\].*', query):
-        return True
-
-    if check_regex('((WHERE|OR)[ ]+[\(]*[ ]*([\(]*[0-9]+[\)]*)[ ]*=[ ]*[\)]*[ ]*\3)|AND[ ]+[\(]*[ ]*([\(]*1[0-9]+|[2-9][0-9]*[\)]*)[ ]*[\(]*[ ]*=[ ]*[\)]*[ ]*\4', query):
-        return True
-
-    return False
-
-
-def check_regex(reg, query):
-    regex = re.compile(reg, re.IGNORECASE)
+    # Clear Text SQL injection test, will create false positives. 
+    regex = re.compile('drop|delete|truncate|update|insert|select|declare|union|create|concat', re.IGNORECASE)
     if regex.search(query):
         return True
 
+    # # look for single quote, = and --
+    # regex = re.compile(
+    #     '((\%3D)|(=))[^\n]*((\%27)|(\')|(\-\-)|(\%3B)|(;))|\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))',
+    #     re.IGNORECASE)
+    # if regex.search(query):
+    #     return True
+
+    # look for MSExec
+    regex = re.compile('exec(\s|\+)+(s|x)p\w+', re.IGNORECASE)
+    if regex.search(query):
+        return True
+
+    # hex equivalent for single quote, zero or more alphanumeric or underscore characters
+    regex = re.compile('/\w*((\%27)|(\'))((\%6F)|o|(\%4F))((\%72)|r|(\%52))/ix', re.IGNORECASE)
+    if regex.search(query):
+        return True
+
+    regex = re.compile('/(\%27)|(\')|(\-\-)|(\%23)|(#)/ix', re.IGNORECASE)
+    if regex.search(query):
+        return True
+
+    return False
 
 
 '''
@@ -112,3 +87,10 @@ def detectWebShell(query):
 
     return False
 
+
+def detectLFI(query):
+    regex = re.compile('^(?:[a-z0-9_-]|.(?!.))+$', re.IGNORECASE)
+    if regex.search(query):
+        return True
+
+    return False

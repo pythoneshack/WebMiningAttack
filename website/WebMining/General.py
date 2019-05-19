@@ -6,8 +6,7 @@ df = pd.read_csv("D:\\Users\\Misel\\PycharmProjects\\WebMiningAttack\\dataNew.cs
 # Convert Data Column to numeric/ Bytes to Gb
 df["Data"] = pd.to_numeric(df.Data, errors='coerce')
 
-df['Data'] = df['Data'].div(1000)
-df['Data'] = df['Data'].div(1000)
+df['Data'] = df['Data'].div(1000000000)
 
 # SECOND TASK
 # Create status frequency error in status_freq\we need only 5xx error
@@ -19,6 +18,7 @@ status_freq['Status'] = df.groupby('Status').agg({'Status': lambda x: list(x).__
 five_xx_status = status_freq[status_freq['Status'] >= 500].sum()
 two_xx_status = status_freq[status_freq['Status'] < 300].sum()
 four_xx_status = status_freq[(status_freq['Status'] < 500) & (status_freq['Status'] >= 400)].sum()
+
 
 #plot bar status
 line_chart = pygal.HorizontalBar()
@@ -32,6 +32,7 @@ line_chart.render_to_file("BarStatus.svg")
 # FIRST TASK
 freq_traffic = df.Endpoint.count()
 data_traffic = df.Data.sum()
+print(data_traffic)
 
 # THIRD TASK
 ip_freq = df.groupby('Host').size().count()
